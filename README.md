@@ -1,3 +1,12 @@
-# Herzlich Willkommen auf der Website von Rechtsanwalt Boyan Slavov
+# ra-b-slavov.github.io
 
-Kanzlei für individuelle und kompetente Rechtsberatung – persönlich, verlässlich, auf Augenhöhe.
+Website der Kanzlei Rechtsanwalt Boyan Slavov, Freiburg im Breisgau.
+
+Statische Seite ohne Build-Werkzeuge. Auslieferung über GitHub Pages aus dem
+`main`-Branch, Wurzelverzeichnis. `.nojekyll` schaltet die Jekyll-Verarbeitung ab.
+
+- `index.html` – Einseiten-Auftritt
+- `styles.css` – Gestaltung
+- `script.js` – mobile Navigation, Karte auf Klick laden
+- `impressum.html`, `datenschutz.html` – Pflichtangaben
+- `assets/` – Bilder und Favicon
