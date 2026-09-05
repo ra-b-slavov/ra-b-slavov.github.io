@@ -40,6 +40,21 @@
   /* ---- Kontaktformular ---- */
   var form = document.getElementById("contact-form");
   if (form) {
+    var isBg = (document.documentElement.lang || "").toLowerCase().indexOf("bg") === 0;
+    var t = isBg ? {
+      notActivated: "Формулярът все още не е активиран. Моля, свържете се по телефон или имейл.",
+      sending: "Изпращане …",
+      ok: "Благодаря Ви. Съобщението Ви пристигна, ще се свържа с Вас скоро.",
+      err: "Изпращането не бе успешно. Моля, опитайте отново по-късно или се обадете.",
+      send: "Изпрати съобщение"
+    } : {
+      notActivated: "Das Formular ist noch nicht aktiviert. Bitte per Telefon oder E-Mail Kontakt aufnehmen.",
+      sending: "Wird gesendet …",
+      ok: "Vielen Dank. Ihre Nachricht ist angekommen, ich melde mich zeitnah bei Ihnen.",
+      err: "Das Senden hat nicht geklappt. Bitte versuchen Sie es später erneut oder rufen Sie an.",
+      send: "Nachricht senden"
+    };
+
     var status = form.querySelector(".form-status");
     var btn = form.querySelector('button[type="submit"]');
 
@@ -53,12 +68,12 @@
       e.preventDefault();
       var key = form.querySelector('[name="access_key"]').value;
       if (key.indexOf("HIER-EINSETZEN") !== -1) {
-        show("err", "Das Formular ist noch nicht aktiviert. Bitte per Telefon oder E-Mail Kontakt aufnehmen.");
+        show("err", t.notActivated);
         return;
       }
 
       btn.disabled = true;
-      btn.textContent = "Wird gesendet …";
+      btn.textContent = t.sending;
 
       fetch(form.action, {
         method: "POST",
@@ -69,17 +84,17 @@
         .then(function (data) {
           if (data && data.success) {
             form.reset();
-            show("ok", "Vielen Dank. Ihre Nachricht ist angekommen, ich melde mich zeitnah bei Ihnen.");
+            show("ok", t.ok);
           } else {
-            show("err", "Das Senden hat nicht geklappt. Bitte versuchen Sie es später erneut oder rufen Sie an.");
+            show("err", t.err);
           }
         })
         .catch(function () {
-          show("err", "Das Senden hat nicht geklappt. Bitte versuchen Sie es später erneut oder rufen Sie an.");
+          show("err", t.err);
         })
         .then(function () {
           btn.disabled = false;
-          btn.textContent = "Nachricht senden";
+          btn.textContent = t.send;
         });
     });
   }

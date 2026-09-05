@@ -219,6 +219,22 @@ p { margin: 0 0 1rem; }
   color: var(--gold);
 }
 
+.header-right { display: flex; align-items: center; gap: 1.1rem; }
+
+.lang-switch {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+.lang-switch a { color: var(--muted); text-decoration: none; padding: 0.15rem 0.05rem; }
+.lang-switch a:hover { color: var(--navy); }
+.lang-switch a.is-active { color: var(--navy); }
+.lang-switch span { color: var(--line); }
+
 .site-nav { display: flex; align-items: center; }
 
 .nav-list {
