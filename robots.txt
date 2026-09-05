@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://rechtsanwalt-slavov.de/sitemap.xml
