@@ -16,7 +16,9 @@
 <meta property="og:locale" content="bg_BG">
 <meta property="og:url" content="https://rechtsanwalt-slavov.de/bg/">
 <link rel="icon" href="../favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="../styles.css?v=4">
+<link rel="preload" href="../fonts/spectral-600-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../fonts/source-sans-3-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../styles.css?v=7">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -84,7 +86,7 @@
         <p class="hero-claim">Лично консултиране, бърза комуникация и ясна оценка на Вашето правно положение.</p>
         <p class="hero-lede">
           Компетентно представителство в пътнотранспортното право и общото гражданско
-          право, както и в трудовото, наемното, наследственото и данъчното право.
+          право, както и в наемното, наследственото, данъчното и трудовото право.
         </p>
         <div class="hero-actions">
           <a class="btn btn-ghost" href="#rechtsgebiete">Специализации</a>
@@ -93,12 +95,6 @@
             <span class="btn-tel-num">0177 9574207</span>
           </a>
         </div>
-        <p class="hero-write">
-          Предпочитате да пишете?
-          <a href="https://wa.me/491779574207">WhatsApp</a>
-          <span aria-hidden="true">·</span>
-          <a href="mailto:ra.b.slavov@gmail.com">имейл</a>
-        </p>
         <ul class="hero-trust">
           <li>Отговор обикновено в рамките на същия работен ден</li>
           <li>Консултации на немски, български и английски език</li>
@@ -170,8 +166,8 @@
       <h2 id="rechtsgebiete-title">Моите правни области</h2>
       <p class="section-intro">
         Основната специализация на кантората е пътнотранспортното право. Към нея се
-        добавят общото гражданско право, както и наемното, трудовото, наследственото и
-        данъчното право.
+        добавят общото гражданско право, както и наемното, наследственото, данъчното и
+        трудовото право.
       </p>
 
       <div class="accordion">
@@ -331,10 +327,9 @@
           водя кантората си във Фрайбург им Брайсгау.
         </p>
         <p>
-          Работя ефективно и в голяма степен дигитално. Можете да се свържете с мен чрез
-          WhatsApp, имейл или телефон, а документите можете да сканирате или снимате.
-          Където е удобно, обсъждам случая с Вас чрез видеоразговор. Срещи в кантората са
-          възможни по договорка.
+          Работя ефективно и в голяма степен дигитално. Можете да се свържете с мен по
+          телефон, имейл или WhatsApp, а документите са достатъчни като сканирано копие
+          или снимка. Срещи в кантората и разговори по видео са възможни по договорка.
         </p>
         <p>
           Редовно работя със застрахователи за правни разноски и при желание поемам
@@ -598,6 +593,40 @@
   </div>
 </footer>
 
-<script src="../script.js?v=4"></script>
+<div class="wa-widget" id="wa-widget" data-wa-number="491779574207">
+  <div class="wa-panel" id="wa-panel" role="dialog" aria-label="Чат през WhatsApp" hidden>
+    <div class="wa-header">
+      <span class="wa-avatar">
+        <img src="../portrait.jpg" alt="">
+        <i class="wa-dot" aria-hidden="true"></i>
+      </span>
+      <span class="wa-head-text">
+        <strong>Boyan Slavov</strong>
+        <span class="wa-status">Отговаря обикновено в същия работен ден</span>
+      </span>
+      <button type="button" class="wa-close" id="wa-close" aria-label="Затвори чата">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+    <div class="wa-body">
+      <p class="wa-hint">Отговор през WhatsApp</p>
+      <div class="wa-msg">
+        Здравейте! С какво мога да Ви помогна? Опишете ми накратко Вашия въпрос.
+        <span class="wa-time" id="wa-time"></span>
+      </div>
+    </div>
+    <form class="wa-input" id="wa-form">
+      <input type="text" id="wa-text" name="wa-text" placeholder="Напишете съобщение …" autocomplete="off">
+      <button type="submit" class="wa-send" aria-label="Изпрати през WhatsApp">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2.5 21L23 12 2.5 3v7l14 2-14 2v7z"/></svg>
+      </button>
+    </form>
+  </div>
+  <button type="button" class="wa-fab" id="wa-fab" aria-expanded="false" aria-controls="wa-panel" aria-label="Отвори чат през WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm0 18.15c-1.53 0-3.03-.41-4.34-1.19l-.31-.18-3.12.82.83-3.04-.2-.31a8.16 8.16 0 0 1-1.26-4.35c0-4.54 3.7-8.23 8.24-8.23 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.7 8.24-8.24 8.24zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.42-.14-.01-.31-.01-.48-.01-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.11-.22-.17-.47-.29z"/></svg>
+  </button>
+</div>
+
+<script src="../script.js?v=6"></script>
 </body>
 </html>
