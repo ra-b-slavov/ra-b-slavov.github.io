@@ -615,15 +615,15 @@ p { margin: 0 0 1rem; }
 
 .about-grid {
   display: grid;
-  grid-template-columns: 0.8fr 1.2fr;
+  grid-template-columns: 0.65fr 1.15fr;
   gap: 3.25rem;
   align-items: start;
 }
 .about-photo img {
   width: 100%;
-  max-height: 460px;
+  aspect-ratio: 425 / 530;
   object-fit: cover;
-  object-position: 50% 20%;
+  object-position: 50% 10%;
   -webkit-mask-image:
     linear-gradient(to right, transparent 0%, #000 3%, #000 97%, transparent 100%),
     linear-gradient(to bottom, transparent 0%, #000 3.5%, #000 97.75%, transparent 100%);
@@ -1061,7 +1061,7 @@ p { margin: 0 0 1rem; }
   .reviews { grid-template-columns: 1fr; gap: 1.25rem; }
   .triggers { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
   .about-grid { grid-template-columns: 1fr; gap: 2rem; }
-  .about-photo img { width: min(72%, 320px); }
+  .about-photo img { width: min(66%, 295px); }
   .steps { grid-template-columns: 1fr; gap: 1.25rem; }
   .contact-grid { grid-template-columns: 1fr; gap: 2rem; }
 }
