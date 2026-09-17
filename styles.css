@@ -432,7 +432,7 @@ p { margin: 0 0 1rem; }
 }
 .hero-trust li sup { color: var(--gold); font-weight: 700; }
 
-.hero-portrait { justify-self: end; }
+.hero-portrait { justify-self: end; transform: translateX(1cm); }
 .portrait-frame {
   margin: 0;
   width: min(100%, 425px);
@@ -1041,7 +1041,7 @@ p { margin: 0 0 1rem; }
     padding-top: 2.5rem;
     padding-bottom: 3rem;
   }
-  .hero-portrait { justify-self: start; order: -1; width: 100%; }
+  .hero-portrait { justify-self: start; order: -1; width: 100%; transform: none; }
   .portrait-frame { width: min(85%, 345px); }
   .portrait-frame img { height: 390px; }
   .hero h1 { max-width: none; }
