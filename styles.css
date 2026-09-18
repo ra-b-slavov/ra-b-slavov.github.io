@@ -370,9 +370,9 @@ p { margin: 0 0 1rem; }
       rgba(247,244,238,0.97) 20%,
       rgba(247,244,238,0.91) 52%,
       rgba(247,244,238,0.80) 100%),
-    url("hero-freiburg.jpg?v=2");
-  background-size: cover;
-  background-position: center 38%;
+    url("hero-freiburg.jpg?v=3");
+  background-size: 122% auto;
+  background-position: 20% 38%;
 }
 
 .hero-inner {
