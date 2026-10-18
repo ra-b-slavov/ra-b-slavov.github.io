@@ -806,10 +806,12 @@ p { margin: 0 0 1rem; }
 
 .contact-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 0.88fr 1.12fr;
   gap: 3rem;
   align-items: start;
 }
+
+.contact-details { margin-top: 5.5rem; }
 
 .contact-list { margin: 0; }
 .contact-list > div {
@@ -862,22 +864,37 @@ p { margin: 0 0 1rem; }
   overflow: hidden;
   background: #fff;
   box-shadow: var(--shadow);
-  display: flex;
-  flex-direction: column;
 }
-.contact-photo img {
+.photo-top {
+  aspect-ratio: 3 / 3.74;
+  overflow: hidden;
+}
+.photo-top img {
   width: 100%;
-  aspect-ratio: 4 / 3;
+  height: 100%;
   object-fit: cover;
-  object-position: center 32%;
+  object-position: center 16%;
   display: block;
 }
-.contact-photo-cap {
-  margin: 0;
-  padding: 1rem 1.25rem 1.3rem;
-  font-size: 0.88rem;
-  color: var(--muted);
+.photo-bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2px;
+  background: var(--line);
 }
+.photo-bottom .cell {
+  aspect-ratio: 5 / 5.49;
+  overflow: hidden;
+  background: #fff;
+}
+.photo-bottom img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.photo-bottom .cell.buero img { object-position: center 17%; }
+.photo-bottom .cell.flur img { object-position: center 23%; }
 
 /* Full-bleed Google Maps band that closes out the Kontakt section */
 #kontakt { padding-bottom: 0; border-bottom: 0; }
@@ -1112,6 +1129,7 @@ p { margin: 0 0 1rem; }
   .about-photo img { width: min(66%, 295px); }
   .steps { grid-template-columns: 1fr; gap: 1.25rem; }
   .contact-grid { grid-template-columns: 1fr; gap: 2rem; }
+  .contact-details { margin-top: 0; }
 }
 
 @media (max-width: 560px) {
