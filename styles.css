@@ -937,7 +937,7 @@ p { margin: 0 0 1rem; }
 
 .contact-form-wrap {
   margin-top: 3.5rem;
-  max-width: 780px;
+  max-width: none;
   background: #fff;
   border: 1px solid var(--line);
   border-radius: var(--radius);
